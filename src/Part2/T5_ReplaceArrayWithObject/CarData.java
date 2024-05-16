@@ -1,13 +1,25 @@
 package Part2.T5_ReplaceArrayWithObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CarData {
-    private String[] carNames;
-    private int[] carPrices;
-    private int[] carYears;
-    public CarData(String[] carNames, int[] carPrices, int[] carYears) {
-        this.carNames = carNames;
-        this.carPrices = carPrices;
-        this.carYears = carYears;
+private List<Car> cars;
+    public CarData() {
+        this.cars = new ArrayList<>();
     }
-    // Додаткові методи для роботи з масивом...
+
+    public List<Car> getCars() {
+        return cars;
+    }
+
+    public void addCar(Car car) {
+        cars.add(car);
+    }
+
+    public void removeCar(Car car){
+        cars.remove(car);
+    }
+
+    // Додаткові методи для роботи з List...
 }

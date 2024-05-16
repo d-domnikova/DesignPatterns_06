@@ -1,13 +1,15 @@
 package Part2.T14;
 
 public class Order {
-    private int status;
-    public static final int NEW = 0;
-    public static final int PROCESSING = 1;
-    public static final int COMPLETED = 2;
-    public static final int CANCELLED = 3;
-    public Order() {
-        this.status = NEW;
+    private OrderStatus status;
+
+    public OrderStatus getStatus() {
+        return status;
     }
+
+    public Order(OrderStatus status) {
+        this.status = status;
+    }
+
     // Інші методи класу...
 }

@@ -12,6 +12,7 @@ public class Student {
     }
     public void enrollCourse(Course course) {
         courses.add(course);
+        course.addStudent(this);
     }
     // Додаткові методи...
 }

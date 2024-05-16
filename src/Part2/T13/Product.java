@@ -1,20 +1,17 @@
 package Part2.T13;
 
-public class Product {
-    private int typeCode;
+public abstract class Product {
     private String name;
-    public Product(int typeCode, String name) {
-        this.typeCode = typeCode;
+    public Product(String name) {
         this.name = name;
     }
-    public void process() {
-        if (typeCode == 1) {
-            // Поведінка для типу 1
-        } else if (typeCode == 2) {
-            // Поведінка для типу 2
-        } else {
-            // Поведінка за замовчуванням
-        }
+
+    public String getName() {
+        return name;
     }
-    // Додаткові методи...
+
+    public abstract int getTypeCode();
+
+    public abstract void process();
+
 }

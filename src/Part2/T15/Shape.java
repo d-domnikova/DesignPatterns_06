@@ -1,11 +1,18 @@
 package Part2.T15;
 
 public class Shape {
-    // Інші поля та методи
+    private int area;
+    private int perimeter;
+
+    public Shape(int area, int perimeter){
+        this.area = area;
+        this.perimeter = perimeter;
+    }
+
     public double getArea() {
-        return 0; // Заглушка
+        return this.area;
     }
     public double getPerimeter() {
-        return 0; // Заглушка
+        return this.perimeter;
     }
 }

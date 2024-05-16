@@ -6,11 +6,24 @@ public class Employee {
     // Конструктор та інші методи класу...
     public void raiseSalary(double amount) {
         if (amount > 0) {
-            salary += amount;
+            setSalary(getSalary()+amount);
         }
     }
+
+    public String getName() {
+        return name;
+    }
+
     public double getSalary() {
         return salary;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
     // Інші методи класу...
 }
