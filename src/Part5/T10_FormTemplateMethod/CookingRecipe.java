@@ -1,6 +1,6 @@
 package Part5.T10_FormTemplateMethod;
 
-public class CookingRecipe {
+public abstract class CookingRecipe {
     public void prepareRecipe() {
         boilWater();
         addIngredients();
@@ -10,12 +10,8 @@ public class CookingRecipe {
     private void boilWater() {
         System.out.println("Boiling water");
     }
-    private void addIngredients() {
-        System.out.println("Adding ingredients");
-    }
-    private void cook() {
-        System.out.println("Cooking");
-    }
+    public abstract void addIngredients();
+    public abstract void cook();
     private void serve() {
         System.out.println("Serving");
     }

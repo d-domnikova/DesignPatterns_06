@@ -1,7 +1,8 @@
 package Part5.T2_PullUpMethod;
 
 public class Dog extends Animal {
-    public void bark() {
+    @Override
+    public void makeSound() {
         System.out.println("Woof woof!");
     }
 }

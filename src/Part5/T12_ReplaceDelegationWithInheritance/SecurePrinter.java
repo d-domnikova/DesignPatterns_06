@@ -1,9 +1,9 @@
 package Part5.T12_ReplaceDelegationWithInheritance;
 
-public class SecurePrinter {
-    private final Printer printer = new Printer();
-    void printSecurely(String document) {
+public class SecurePrinter extends Printer{
+    @Override
+    void print(String document) {
         System.out.println("Printing securely: " + document);
-        printer.print(document);
+        super.print(document);
     }
 }

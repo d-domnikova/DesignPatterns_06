@@ -6,9 +6,12 @@ public class Animal {
         this.species = species;
     }
     public void eat() {
-        System.out.println("The animal is eating.");
+        System.out.printf("The %s is eating.%n", this.species);
     }
     public void sleep() {
-        System.out.println("The animal is sleeping.");
+        System.out.printf("The %s is sleeping.%n", this.species);
+    }
+    public void makeSound() {
+        System.out.printf("The %s is barking.%n", this.species);
     }
 }
