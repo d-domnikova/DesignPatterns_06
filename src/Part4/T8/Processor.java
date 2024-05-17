@@ -6,8 +6,6 @@ public class Processor {
         this.calculator = calculator;
     }
     public int process(int x, int y) {
-        int result = calculator.add(x, y);
-        // використання результату
-        return result;
+        return this.calculator.add(x, y);
     }
 }

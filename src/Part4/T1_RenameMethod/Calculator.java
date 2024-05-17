@@ -1,8 +1,8 @@
 package Part4.T1_RenameMethod;
 
 public class Calculator {
-    public int calc(int x, int y) {
+    public int multiply(int x, int y) {
         // логіка обчислення
-        return 0;
+        return x*y;
     }
 }
